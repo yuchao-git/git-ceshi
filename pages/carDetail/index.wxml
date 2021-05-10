@@ -1,0 +1,12 @@
+<!--pages/carDetail/index.wxml-->
+<view class="car-detail">
+    <view class="content">
+        <view class="top-img image-box">
+            <view class="sign">1/35</view>
+        </view>
+        <view class="info"></view>
+    </view>
+    <view class="footer">
+        <detail-footer></detail-footer>
+    </view> 
+</view>

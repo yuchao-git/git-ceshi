@@ -1,0 +1,18 @@
+<!-- pages/carImageList/index.wxml -->
+<view class="car-image-list">
+    <view class="tabs">
+        <view wx:for="{{tabs}}" bind:tap="selectTab" data-id="{{item.id}}" class="tab-item {{tabId == item.id?'active':''}}">{{item.name}}</view>
+    </view>
+    <view class="content">
+        <swiper class="image-list">
+            <block wx:for="{{imageList}}">
+                <swiper-item>
+                    <view class="image-item image-box" style="background-image:url({{item}})"></view>
+                </swiper-item>
+            </block>
+        </swiper>
+    </view>
+    <view class="footer">
+        <detail-footer></detail-footer>
+    </view>
+</view>

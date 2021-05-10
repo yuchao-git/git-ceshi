@@ -1,0 +1,59 @@
+<view class="page-buycar">
+    <view class="top">
+        <view class="select-city" bind:tap="goSelectCity">{{selectCity.name}}</view>
+        <view class="search">
+            搜索你想要的车
+            <mp-icon icon="search" color="#999" size="{{25}}"></mp-icon>
+        </view>
+        <view class="filter" bind:tap="openFilter">筛选</view>
+    </view>
+    <view class="content">
+        <scroll-view bindscrolltolower="requestCarList" scroll-y="true">
+            <view wx:if="{{carList.length > 0}}" class="car-list">
+                <view wx:for="{{carList}}" class="item">
+                    <view class="car-img image-box"></view>
+                    <view class="car-info">
+                        <view class="car-name">宝马3系 2017款 320i自动时尚版</view>
+                        <view class="year-dis">2017年/2.8万公里</view>
+                        <view class="pay-server">
+                            <view class="pay">
+                                <view class="money">9.61万</view>
+                                <view class="first">首付1.03万</view>
+                            </view>
+                            <view class="server">到店服务</view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <noByDefault wx:if="{{carList.length <= 0}}" text="暂无数据"></noByDefault>
+        </scroll-view>
+    </view>
+    <modal class="filter-modal" position="right" customTitle="{{true}}" customFooter show="{{showFilter}}" showClose="{{false}}" maskClose="{{true}}">
+        <view class="content-body" slot="body">
+            <view class="search-body">
+                <view class="search-item">
+                    <view class="search-title">品牌</view>
+                    <view class="search-content">
+                        <view class="brand-list">
+                            <view wx:for="{{brandList}}" bind:tap="selectBrand" data-id="{{item.id}}" class="brand-item {{filterParams.brand == item.id?'active':''}}">{{item.name}}</view>
+                        </view>
+                    </view>
+                </view>
+                <view class="search-item">
+                    <view class="search-title">价格</view>
+                    <view class="search-content">
+                        <view class="money-search">
+                            <input class="money" data-type="minMoney" type="number" placeholder-style="font-size:28rpx" placeholder="最低价格"  bindblur="searchChange" /> 万
+                            <text class="divide">-</text>
+                            <input class="money" data-type="maxMoney" type="number"  placeholder-style="font-size:28rpx" placeholder="最高价格"  bindblur="searchChange" /> 万
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <view class="search-active">
+                <view bind:tap="closeFilter" class="footer-active cancle">关闭</view>
+                <view bindtap="search" class="footer-active ok">确定</view>
+            </view>
+        </view>
+    </modal>
+</view>

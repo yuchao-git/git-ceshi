@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "city-choose": "plugin://chooseCity/citys"
+  },
+  "navigationBarTitleText": "选择城市"
+}

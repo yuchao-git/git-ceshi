@@ -1,0 +1,9 @@
+/**app.wxss**/
+view,text{
+  box-sizing: border-box;
+}
+.image-box{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}

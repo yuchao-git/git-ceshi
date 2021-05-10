@@ -1,0 +1,30 @@
+.car-detail {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    .content {
+        flex: 1;
+        overflow: auto;
+
+        .top-img {
+            height: 400rpx;
+            background-color: red;
+            position: relative;
+            .sign{
+                position: absolute;
+                bottom: 30rpx;
+                right: 30rpx;
+                padding: 4rpx 10rpx;
+                border-radius: 20rpx;
+                background-color: #494944;
+                font-size: 24rpx;
+                color: white;
+            }
+        }
+        .info{
+            height: 2000rpx;
+            background-color: yellow;
+        }
+    }
+}
