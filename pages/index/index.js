@@ -11,13 +11,13 @@ Page({
   data: {
     bannerList: [
       {
-        icon: 'https://cartype.image.mucang.cn/cartype-image/2021/0122/04/0677160ae2b7476cbadc1a0de667ebf7.jpg!jpg720'
+        icon: '/cartype-image/2021/0122/04/0677160ae2b7476cbadc1a0de667ebf7.jpg!jpg720'
       },
       {
-        icon: 'https://cartype.image.mucang.cn/cartype-image/2021/0122/04/0677160ae2b7476cbadc1a0de667ebf7.jpg!jpg720'
+        icon: '/cartype-image/2021/0122/04/0677160ae2b7476cbadc1a0de667ebf7.jpg!jpg720'
       },
       {
-        icon: 'https://cartype.image.mucang.cn/cartype-image/2021/0122/04/0677160ae2b7476cbadc1a0de667ebf7.jpg!jpg720'
+        icon: '/cartype-image/2021/0122/04/0677160ae2b7476cbadc1a0de667ebf7.jpg!jpg720'
       }
     ],
     priceList: [

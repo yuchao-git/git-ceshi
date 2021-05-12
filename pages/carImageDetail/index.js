@@ -35,11 +35,11 @@ Page({
     ],
     imageList: [],
     imageData: {
-      1: Array(100).fill('https://cartype.image.mucang.cn/cartype-image/2018/0319/18/37bcdf11a6044cd194463e46f5dff314.jpg!jpg720'),
-      2: Array(100).fill('https://cartype.image.mucang.cn/cartype-image/2018/0319/18/eb5fba5dc2854f38911fcf6f92f80814.jpg!jpg720'),
-      3: Array(100).fill('https://cartype.image.mucang.cn/cartype-image/2018/0319/18/140536db37134fc7ab36dad227fa7988.jpg!jpg720'),
-      4: Array(100).fill('https://cartype.image.mucang.cn/cartype-image/2018/0319/18/b9c5c53e27274753966af0efed38f0e4.jpg!jpg720'),
-      5: Array(50).fill('https://cartype.image.mucang.cn/cartype-image/2018/0319/18/d59b4bdc10054cc8b5e77220f5ff56a9.jpg!jpg720'),
+      1: Array(100).fill('/cartype-image/2018/0319/18/37bcdf11a6044cd194463e46f5dff314.jpg!jpg720'),
+      2: Array(100).fill('/cartype-image/2018/0319/18/eb5fba5dc2854f38911fcf6f92f80814.jpg!jpg720'),
+      3: Array(100).fill('/cartype-image/2018/0319/18/140536db37134fc7ab36dad227fa7988.jpg!jpg720'),
+      4: Array(100).fill('/cartype-image/2018/0319/18/b9c5c53e27274753966af0efed38f0e4.jpg!jpg720'),
+      5: Array(50).fill('/cartype-image/2018/0319/18/d59b4bdc10054cc8b5e77220f5ff56a9.jpg!jpg720'),
     },
     tabId: 1
   },
