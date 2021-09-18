@@ -1,4 +1,0 @@
-<view class="no-by-default-cp">
-    <view class="img"></view>
-    <view class="text">{{text}}</view>
-</view>
